@@ -7,8 +7,9 @@
 body {
     background: #0d0d0d;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
 .hero {
@@ -23,10 +24,20 @@ body {
 
 h1 {
     font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
 }
 
 h2 {
     margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 section {
@@ -40,21 +51,29 @@ section {
 }
 
 .services li {
-    padding: 10px 0;
+    padding: 14px 0;
     border-bottom: 1px solid #333;
+    font-size: 1.05rem;
 }
 
 .button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
+    margin-top: 25px;
+    padding: 14px 28px;
     background: white;
     color: black;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    transition: opacity 0.2s ease;
 }
 
 .button:hover {
     opacity: 0.8;
+}
+
+.about p {
+    max-width: 700px;
+    font-size: 1.05rem;
 }
