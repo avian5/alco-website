@@ -5,75 +5,242 @@
 }
 
 body {
-    background: #0d0d0d;
-    color: white;
+    background: #008080;
     font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
 }
 
+/* MAIN HERO */
+
 .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 40px;
     text-align: center;
-    padding: 80px 20px;
 }
 
 .logo {
-    width: 180px;
-    margin-bottom: 20px;
+    width: 170px;
+    margin-bottom: 70px;
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -0.03em;
+    color: black;
+    font-size: 8rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.45em;
+    margin-left: 0.45em;
+    line-height: 1;
 }
 
-h2 {
-    margin-bottom: 20px;
+/* ELECTRONICS SECTION */
+
+.electronics-row {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.line {
+    width: 150px;
+    height: 3px;
+    background: black;
+}
+
+.electronics {
+    color: black;
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.45em;
 }
 
-p {
-    font-size: 1.1rem;
-    font-weight: 400;
+/* TAGLINE */
+
+.tagline {
+    margin-top: 45px;
+    color: #800020;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
 }
 
-section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
+/* BUTTONS */
+
+.button-row {
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+    width: 100%;
+    max-width: 980px;
 }
 
-.services ul {
+.big-button,
+.wide-button {
+    border: 3px solid black;
+    color: black;
+    background: transparent;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 0.35em;
+    transition: 0.2s ease;
+}
+
+.big-button {
+    flex: 1;
+    padding: 45px 20px;
+    font-size: 2.2rem;
+}
+
+.wide-button {
+    width: 100%;
+    max-width: 980px;
+    padding: 35px 20px;
+    margin-top: 35px;
+    color: #800020;
+    font-size: 1.8rem;
+}
+
+.big-button:hover,
+.wide-button:hover {
+    background: black;
+    color: #008080;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 80px;
+    width: 100%;
+    background: black;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-grid {
+    display: flex;
+    gap: 60px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-block {
+    min-width: 160px;
+}
+
+.footer-block h3 {
+    color: #008080;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    margin-bottom: 15px;
+}
+
+.footer-block p {
+    color: white;
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.footer-block a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-block a:hover {
+    color: #800020;
+}
+.page {
+    min-height: 100vh;
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.back-link {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.page-title {
+    margin-top: 80px;
+    font-size: 5rem;
+    color: black;
+    font-style: italic;
+    letter-spacing: 0.35em;
+}
+
+.content-box {
+    margin-top: 50px;
+    border: 3px solid black;
+    padding: 45px;
+}
+
+.content-box p {
+    color: black;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.page {
+    min-height: 100vh;
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.back-link {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.page-title {
+    margin-top: 80px;
+    font-size: 5rem;
+    color: black;
+    font-style: italic;
+    letter-spacing: 0.35em;
+}
+
+.content-box {
+    margin-top: 50px;
+    border: 3px solid black;
+    padding: 40px;
+}
+
+.content-box h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 25px;
+    letter-spacing: 0.15em;
+}
+
+.service-list {
     list-style: none;
 }
 
-.services li {
-    padding: 14px 0;
-    border-bottom: 1px solid #333;
-    font-size: 1.05rem;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 28px;
-    background: white;
+.service-list li {
     color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-family: Helvetica, Arial, sans-serif;
-    transition: opacity 0.2s ease;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    line-height: 1.5;
 }
 
-.button:hover {
-    opacity: 0.8;
-}
-
-.about p {
-    max-width: 700px;
-    font-size: 1.05rem;
+.brand-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
 }
