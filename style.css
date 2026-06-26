@@ -67,7 +67,7 @@ h1 {
     font-weight: 600;
 }
 
-/* BUTTONS */
+/* HOMEPAGE BUTTONS */
 
 .button-row {
     display: flex;
@@ -108,6 +108,111 @@ h1 {
 .wide-button:hover {
     background: black;
     color: #008080;
+}
+
+/* SUBPAGES */
+
+.page {
+    min-height: 100vh;
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: inline-block;
+    color: #800020;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: 0.35em;
+    margin-bottom: 30px;
+    transition: 0.2s ease;
+}
+
+.back-link:hover {
+    opacity: 0.75;
+}
+
+.page-title {
+    margin-top: 80px;
+    font-size: 5rem;
+    color: black;
+    font-style: italic;
+    letter-spacing: 0.35em;
+}
+
+.content-box {
+    margin-top: 50px;
+    border: 3px solid black;
+    padding: 40px;
+}
+
+.content-box h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 25px;
+    letter-spacing: 0.15em;
+}
+
+.content-box p {
+    color: black;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.brand-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+/* PRODUCTS */
+
+.products-list li {
+    font-weight: 400;
+}
+
+.products-list strong {
+    font-weight: 700;
+}
+
+.price {
+    color: #800020;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 8px;
+}
+
+.contact-order {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #800020;
+}
+
+.contact-order a {
+    color: #800020;
+    text-decoration: underline;
+}
+
+.contact-order a:hover {
+    opacity: 0.75;
 }
 
 /* FOOTER */
@@ -155,231 +260,91 @@ h1 {
 .footer-block a:hover {
     color: #800020;
 }
-.page {
-    min-height: 100vh;
-    padding: 60px 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
-.back-link {
-    color: black;
-    text-decoration: none;
-    font-style: italic;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-}
+/* MOBILE */
 
-.page-title {
-    margin-top: 80px;
-    font-size: 5rem;
-    color: black;
-    font-style: italic;
-    letter-spacing: 0.35em;
-}
-
-.content-box {
-    margin-top: 50px;
-    border: 3px solid black;
-    padding: 45px;
-}
-
-.content-box p {
-    color: black;
-    font-size: 1.25rem;
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-.page {
-    min-height: 100vh;
-    padding: 60px 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.back-link {
-    color: black;
-    text-decoration: none;
-    font-style: italic;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-}
-
-.page-title {
-    margin-top: 80px;
-    font-size: 5rem;
-    color: black;
-    font-style: italic;
-    letter-spacing: 0.35em;
-}
-
-.content-box {
-    margin-top: 50px;
-    border: 3px solid black;
-    padding: 40px;
-}
-
-.content-box h2 {
-    font-size: 2rem;
-    color: black;
-    margin-bottom: 25px;
-    letter-spacing: 0.15em;
-}
-
-.service-list {
-    list-style: none;
-}
-
-.service-list li {
-    color: black;
-    font-size: 1.2rem;
-    margin-bottom: 18px;
-    line-height: 1.5;
-}
-
-.brand-image {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    display: block;
-    margin: 20px auto 0 auto;
-}
 @media (max-width: 700px) {
-
     .hero {
-
         padding: 35px 18px;
-
     }
 
     .logo {
-
         width: 130px;
-
         margin-bottom: 45px;
-
     }
 
     h1 {
-
         font-size: 3.8rem;
-
         letter-spacing: 0.22em;
-
         margin-left: 0.22em;
-
     }
 
     .electronics-row {
-
         gap: 15px;
-
         margin-top: 28px;
-
     }
 
     .line {
-
         width: 45px;
-
         height: 2px;
-
     }
 
     .electronics {
-
         font-size: 1rem;
-
         letter-spacing: 0.25em;
-
     }
 
     .tagline {
-
         margin-top: 28px;
-
         font-size: 1rem;
-
         max-width: 320px;
-
     }
 
     .button-row {
-
         flex-direction: column;
-
         gap: 22px;
-
         margin-top: 45px;
-
         max-width: 100%;
-
     }
 
     .big-button,
-
     .wide-button {
-
         width: 100%;
-
         max-width: 100%;
-
         font-size: 1.4rem;
-
         letter-spacing: 0.22em;
-
         padding: 24px 12px;
-
     }
 
     .wide-button {
-
         margin-top: 22px;
-
     }
 
     .footer-grid {
-
         flex-direction: column;
-
         gap: 28px;
-
         text-align: center;
-
     }
 
     .footer-block {
-
         min-width: 0;
-
     }
 
     .page-title {
-
         font-size: 3rem;
-
         letter-spacing: 0.22em;
-
     }
 
     .content-box {
-
         padding: 25px;
-
     }
 
     .content-box h2 {
-
         font-size: 1.4rem;
-
     }
 
     .service-list li,
-
     .content-box p {
-
         font-size: 1rem;
-
     }
-
 }
