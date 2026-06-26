@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background: #008080;
     font-family: Helvetica, Arial, sans-serif;
@@ -28,11 +32,11 @@ body {
 
 h1 {
     color: black;
-    font-size: 8rem;
+    font-size: clamp(3rem, 16vw, 8rem);
     font-weight: 900;
     font-style: italic;
-    letter-spacing: 0.45em;
-    margin-left: 0.45em;
+    letter-spacing: 0.18em;
+    margin-left: 0.18em;
     line-height: 1;
 }
 
@@ -276,13 +280,15 @@ h1 {
     }
 
     h1 {
-        font-size: 3.8rem;
-        letter-spacing: 0.22em;
-        margin-left: 0.22em;
+        font-size: clamp(3rem, 14vw, 4rem);
+        letter-spacing: 0.18em;
+        margin-left: 0.18em;
     }
 
     .electronics-row {
-        gap: 15px;
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
         margin-top: 28px;
     }
 
@@ -293,7 +299,7 @@ h1 {
 
     .electronics {
         font-size: 1rem;
-        letter-spacing: 0.25em;
+        letter-spacing: 0.22em;
     }
 
     .tagline {
@@ -304,16 +310,18 @@ h1 {
 
     .button-row {
         flex-direction: column;
+        align-items: center;
         gap: 22px;
         margin-top: 45px;
-        max-width: 100%;
+        width: 100%;
+        max-width: 340px;
     }
 
     .big-button,
     .wide-button {
         width: 100%;
-        max-width: 100%;
-        font-size: 1.4rem;
+        max-width: 340px;
+        font-size: 1.25rem;
         letter-spacing: 0.22em;
         padding: 24px 12px;
     }
