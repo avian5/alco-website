@@ -244,3 +244,142 @@ h1 {
     display: block;
     margin: 20px auto 0 auto;
 }
+@media (max-width: 700px) {
+
+    .hero {
+
+        padding: 35px 18px;
+
+    }
+
+    .logo {
+
+        width: 130px;
+
+        margin-bottom: 45px;
+
+    }
+
+    h1 {
+
+        font-size: 3.8rem;
+
+        letter-spacing: 0.22em;
+
+        margin-left: 0.22em;
+
+    }
+
+    .electronics-row {
+
+        gap: 15px;
+
+        margin-top: 28px;
+
+    }
+
+    .line {
+
+        width: 45px;
+
+        height: 2px;
+
+    }
+
+    .electronics {
+
+        font-size: 1rem;
+
+        letter-spacing: 0.25em;
+
+    }
+
+    .tagline {
+
+        margin-top: 28px;
+
+        font-size: 1rem;
+
+        max-width: 320px;
+
+    }
+
+    .button-row {
+
+        flex-direction: column;
+
+        gap: 22px;
+
+        margin-top: 45px;
+
+        max-width: 100%;
+
+    }
+
+    .big-button,
+
+    .wide-button {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        font-size: 1.4rem;
+
+        letter-spacing: 0.22em;
+
+        padding: 24px 12px;
+
+    }
+
+    .wide-button {
+
+        margin-top: 22px;
+
+    }
+
+    .footer-grid {
+
+        flex-direction: column;
+
+        gap: 28px;
+
+        text-align: center;
+
+    }
+
+    .footer-block {
+
+        min-width: 0;
+
+    }
+
+    .page-title {
+
+        font-size: 3rem;
+
+        letter-spacing: 0.22em;
+
+    }
+
+    .content-box {
+
+        padding: 25px;
+
+    }
+
+    .content-box h2 {
+
+        font-size: 1.4rem;
+
+    }
+
+    .service-list li,
+
+    .content-box p {
+
+        font-size: 1rem;
+
+    }
+
+}
